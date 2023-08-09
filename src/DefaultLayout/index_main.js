@@ -12,7 +12,7 @@ function DefaultLayout() {
         <div>
             <div className={cx('wrapper')}>
                 <Header />
-                <div className={cx('container')}>
+                <div className={cx('container_main')}>
                     <Body />
                     <div className={cx('footer')}>
                         <Footer />
