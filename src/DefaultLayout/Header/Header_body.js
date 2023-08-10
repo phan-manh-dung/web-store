@@ -12,42 +12,44 @@ const cx = classNames.bind(styles);
 
 function Header_body() {
     return (
-        <div className={cx('middle')}>
-            <div className={cx('container-middle')}>
-                <div className={cx('search')}>
-                    <div>
-                        <input placeholder="Tìm sản phẩm tại đây ..." />
+        <div className={cx('container-wrapper')}>
+            <div className={cx('container-fluid')}>
+                <div style={{ alignItems: 'center', padding: '0 45px' }} className={cx('row')}>
+                    <div className={cx('col-lg-4')}>
+                        <div className={cx('search_input')}>
+                            <input placeholder="Tìm sản phẩm tại đây ..." />
+                        </div>
                     </div>
-                </div>
-                <div className={cx('logo')}>
-                    <img src={logoImage} alt="logo" width="400" height="70" />
-                </div>
-                <div className={cx('control')}>
-                    <div className={cx('cart')}>
-                        <Tippy
-                            content="Chưa có sản phẩm nào trong giỏ hàng"
-                            placement="bottom"
-                            offset={[-80, 10]}
-                            arrow={false}
-                            animation="scale-subtle"
-                            maxWidth={180}
-                        >
+                    <div className={cx('col-lg-4')}>
+                        <img src={logoImage} alt="logo" width="400" height="70" />
+                    </div>
+                    <div className={cx('col-lg-4')}>
+                        <div className={cx('cart')}>
+                            <Tippy
+                                content="Chưa có sản phẩm nào trong giỏ hàng"
+                                placement="bottom"
+                                offset={[-80, 10]}
+                                arrow={false}
+                                animation="scale-subtle"
+                                maxWidth={180}
+                            >
+                                <div className={cx('cart-icon-container')}>
+                                    <a href="/">
+                                        <FontAwesomeIcon icon={faShoppingCart} />
+                                    </a>
+                                    <span>0</span>
+                                </div>
+                            </Tippy>
                             <div className={cx('cart-icon-container')}>
                                 <a href="/">
-                                    <FontAwesomeIcon icon={faShoppingCart} />
+                                    <FontAwesomeIcon icon={faHeart} />
                                 </a>
-                                <span>0</span>
                             </div>
-                        </Tippy>
-                        <div className={cx('cart-icon-container')}>
-                            <a href="/">
-                                <FontAwesomeIcon icon={faHeart} />
-                            </a>
-                        </div>
-                        <div className={cx('cart-icon-container')}>
-                            <a href="/">
-                                <FontAwesomeIcon icon={faRotate} />
-                            </a>
+                            <div className={cx('cart-icon-container')}>
+                                <a href="/">
+                                    <FontAwesomeIcon icon={faRotate} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

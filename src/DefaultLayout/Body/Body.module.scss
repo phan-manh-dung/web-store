@@ -19,6 +19,8 @@
 }
 
 .menu-male {
+    max-width: 100%;
+    width: 100%;
     .male-li {
         list-style: none;
         color: #333;
@@ -44,11 +46,11 @@
         color: #333;
     }
     .male-ul {
+        max-width: 100%;
         padding: 5px 10px;
         display: flex;
-        width: 908px;
+        width: 100%;
         background-color: aqua;
-        margin-left: 164px;
         margin-top: 0;
         margin-bottom: 0;
         margin-right: 0;
@@ -173,9 +175,6 @@
     margin: 0 40px;
 }
 
-// .pick_logo :hover {
-//     transform: scale(0.9);
-// }
 .pick_logo:hover {
     animation: pulse 0.1s;
 }

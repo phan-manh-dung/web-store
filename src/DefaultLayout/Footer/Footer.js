@@ -9,112 +9,136 @@ const cx = classNames.bind(styles);
 function Footer() {
     return (
         <div className={cx('main-footer')}>
-            <div className={cx('container-footer')}>
-                <div className={cx('container-fluid')}>
-                    <div className={cx('information-top-list row')}>
-                        <div className={cx('top-list_mot col-lg-3')}>
-                            <div className={cx('wrapper-list_mot')}>
-                                <div className={cx('list-mot_logo')}>
+            <div>
+                <div className={cx('container-footer')}>
+                    <div className={cx('container-fluid')}>
+                        <div className={cx('information-top-list row')}>
+                            <div className={cx('top-list_mot col-lg-3')}>
+                                <div className={cx('wrapper-list_mot')}>
+                                    <div className={cx('list-mot_logo')}>
+                                        <img
+                                            alt=""
+                                            width="254"
+                                            height="64"
+                                            src="https://i2.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/logopt2000.png?ssl=1"
+                                        />
+                                    </div>
+                                    <div className={cx('container-list-mot-address')}>
+                                        <div className={cx('list-mot-address')}>
+                                            <div className={cx('container')}>
+                                                <div className={cx('address-mot')}>
+                                                    <div className={cx('address-detail')}>
+                                                        <strong>DC:</strong>153AB Nam Kỳ Khởi Nghĩa ,P.6 ,Q.3
+                                                    </div>
+                                                    <div className={cx('address-detail')}>
+                                                        <strong>DT:</strong>0373286662
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={cx('top-list_mot col-lg-2')}>
+                                <div className={cx('wrapper-list_mot')}>
+                                    <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
+                                        <span className={cx('recruitment')}>md2003</span>
+                                    </div>
+                                    <div className={cx('list-mot-address')}>
+                                        <ul className={cx('recruitment-ul')}>
+                                            <li className={cx('recruitment-li')}>
+                                                <a href="/">Tuyển dụng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <img
+                                        style={{ marginTop: '6px' }}
                                         alt=""
-                                        width="254"
-                                        height="64"
-                                        src="https://i2.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/logopt2000.png?ssl=1"
+                                        src="https://i0.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/pt2000dangkybocongthuong.png?ssl=1"
                                     />
                                 </div>
-                                <div className={cx('list-mot-address')}>
-                                    <div>
-                                        <div className={cx('address-dc')}>dc:</div>
-                                        <div className={cx('address-dc')}>dt:</div>
+                            </div>
+
+                            <div className={cx('top-list_mot col-lg-3')}>
+                                <div className={cx('wrapper-list_mot')}>
+                                    <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
+                                        <span className={cx('recruitment')}>khách hàng</span>
                                     </div>
-                                    <div>
-                                        <div className={cx('address-detail')}>153AB Nam Kỳ Khởi Nghĩa ,P.6 ,Q.3 </div>
-                                        <div className={cx('address-detail')}>0373286662</div>
+                                    <div className={cx('list-mot-address list-list')}>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
+                                                <a href="/">Thông tin tài khoản</a>
+                                            </li>
+                                        </ul>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
+                                                <a href="/">Đơn hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={cx('top-list_mot col-lg-3')}>
+                                <div className={cx('wrapper-list_mot')}>
+                                    <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
+                                        <span className={cx('recruitment')}>hỗ trợ</span>
+                                    </div>
+                                    <div className={cx('list-mot-address list-list')}>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
+                                                <a href="/">Chính sách thanh toán</a>
+                                            </li>
+                                        </ul>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
+                                                <a href="/">Chính sách đổi hàng</a>
+                                            </li>
+                                        </ul>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
+                                                <a href="/">Chính sách bảo mật</a>
+                                            </li>
+                                        </ul>
+                                        <ul className={cx('list-ul')}>
+                                            <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
+                                                <a href="/">Hướng dẫn mua</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={cx('top-list_mot col-lg-1')}>
+                                <div className={cx('wrapper-list_mot')}>
+                                    <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
+                                        <span className={cx('recruitment')}>khách hàng</span>
+                                    </div>
+                                    <div style={{}} className={cx('list-mot-address-logo')}>
+                                        <FontAwesomeIcon className={cx('icon-youtube')} icon={faYoutube} />
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div className={cx('top-list_mot col-lg-2')}>
-                            <div className={cx('wrapper-list_mot')}>
-                                <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
-                                    <span className={cx('recruitment')}>md2003</span>
-                                </div>
-                                <div className={cx('list-mot-address')}>
-                                    <ul className={cx('recruitment-ul')}>
-                                        <li className={cx('recruitment-li')}>
-                                            <a href="/">Tuyển dụng</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <img
-                                    style={{ marginTop: '6px' }}
-                                    alt=""
-                                    src="https://i0.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/pt2000dangkybocongthuong.png?ssl=1"
-                                />
-                            </div>
-                        </div>
-
-                        <div className={cx('top-list_mot col-lg-3')}>
-                            <div className={cx('wrapper-list_mot')}>
-                                <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
-                                    <span className={cx('recruitment')}>khách hàng</span>
-                                </div>
-                                <div className={cx('list-mot-address list-list')}>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
-                                            <a href="/">Thông tin tài khoản</a>
-                                        </li>
-                                    </ul>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
-                                            <a href="/">Đơn hàng</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={cx('top-list_mot col-lg-3')}>
-                            <div className={cx('wrapper-list_mot')}>
-                                <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
-                                    <span className={cx('recruitment')}>hỗ trợ</span>
-                                </div>
-                                <div className={cx('list-mot-address list-list')}>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
-                                            <a href="/">Chính sách thanh toán</a>
-                                        </li>
-                                    </ul>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
-                                            <a href="/">Chính sách đổi hàng</a>
-                                        </li>
-                                    </ul>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li')}>
-                                            <a href="/">Chính sách bảo mật</a>
-                                        </li>
-                                    </ul>
-                                    <ul className={cx('list-ul')}>
-                                        <li style={{ textAlign: 'left' }} className={cx('recruitment-li ')}>
-                                            <a href="/">Hướng dẫn mua</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={cx('top-list_mot col-lg-1')}>
-                            <div className={cx('wrapper-list_mot')}>
-                                <div style={{ textAlign: 'left' }} className={cx('list-mot_logo')}>
-                                    <span className={cx('recruitment')}>khách hàng</span>
-                                </div>
-                                <div style={{}} className={cx('list-mot-address-logo')}>
-                                    <FontAwesomeIcon className={cx('icon-youtube')} icon={faYoutube} />
-                                </div>
-                            </div>
-                        </div>
+            <div className={cx('container')}>
+                <div className={cx('container-pay')}>
+                    <div className={cx('pay')}>
+                        <span className={cx('pay-name')}> chấp nhận thanh toán</span>
+                    </div>
+                    <div className={cx('container-img')}>
+                        <img
+                            alt=""
+                            src="	https://i2.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/mastercardicon.png?ssl=1"
+                        />
+                        <img
+                            alt=""
+                            src="https://i2.wp.com/pt2000.com.vn/wp-content/uploads/2018/08/visaicon.png?ssl=1"
+                        />
                     </div>
                 </div>
             </div>

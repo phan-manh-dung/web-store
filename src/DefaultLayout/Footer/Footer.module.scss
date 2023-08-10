@@ -6,19 +6,8 @@
     padding: 20px 15px 10px 15px;
 }
 
-.wrapper-list_mot {
-    padding-left: 36px;
-}
-
 .list-mot-address {
     display: flex;
-
-    .address-dc {
-        padding-right: 5px;
-        text-transform: uppercase;
-        font-weight: 500;
-        padding-bottom: 26px;
-    }
 
     .address-detail {
         font-size: 14px;
@@ -26,6 +15,7 @@
         font-weight: 400;
         padding-bottom: 5px;
         text-align: left;
+        padding-left: 12px;
     }
 
     .recruitment-li {
@@ -53,8 +43,13 @@
     border-radius: 5px;
 }
 
-.list-mot-address {
-    border-radius: 5px;
+.address-mot,
+.address-hai {
+    display: flex;
+}
+
+.address-mot {
+    display: inline-block;
 }
 
 .list-ul {
@@ -86,6 +81,46 @@
     padding-top: 2px;
 }
 
+//pay
+.method-pay {
+    height: 66px;
+    width: 100%;
+}
+.container-pay {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+    .pay-name {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.container-img:hover {
+    animation: pulse 0.1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.container-img {
+    transition: all ease-in-out 0.1s;
+}
 //area
 .area-south {
     text-align: left;
