@@ -2,10 +2,8 @@
     background-color: #eee;
 }
 
-.information-top {
-    padding-left: 8px;
-    padding-right: 108px;
-    padding-top: 30px;
+.container-footer {
+    padding: 20px 15px 10px 15px;
 }
 
 .wrapper-list_mot {
@@ -47,8 +45,16 @@
     font-weight: 700;
 }
 
-.list-list {
+.list-mot-address-logo {
+    width: 44px;
+    height: 36px;
+    background-color: red;
     display: block;
+    border-radius: 5px;
+}
+
+.list-mot-address {
+    border-radius: 5px;
 }
 
 .list-ul {
@@ -78,4 +84,40 @@
     color: white;
     padding-left: 6px;
     padding-top: 2px;
+}
+
+//area
+.area-south {
+    text-align: left;
+    padding: 0 0.8em 0 0;
+    line-height: 1em;
+    font-size: 100%;
+    margin: 0;
+    width: 10%;
+
+    .area-south {
+        text-align: left;
+    }
+    .south {
+        font-weight: 600;
+    }
+}
+
+.line {
+    border-color: #5aa1e3;
+    border-top: 1px solid #5aa1e3;
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.area {
+    display: flex;
+}
+
+.footer-ul-ul {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
 }
