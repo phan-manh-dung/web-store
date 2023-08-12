@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Đúng đư
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import Header_body from './Header_body';
 import Header_footer from './Header_footer';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -24,10 +25,10 @@ function Header() {
                                 <a href="tel:0373286662">Online: 0373286662</a>
                             </li>
                             <li className={cx('li')}>
-                                <a href=""> 0373286662</a>
+                                <Link to="/admin">0373286662</Link>
                             </li>
                             <li className={cx('li')}>
-                                <a href="">Zalo: 0373286662</a>
+                                <Link to="/product">Zalo: 0373286662</Link>
                             </li>
                         </ul>
                     </div>

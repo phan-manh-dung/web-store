@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Body.module.scss';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
