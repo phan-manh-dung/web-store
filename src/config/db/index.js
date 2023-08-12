@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
-async function connect() {
-    try {
-        await mongoose.connect('mongodb://localhost:27017/web_store', {
+
+const connect = () => {
+    mongoose
+        .connect('mongodb://localhost:27017/your-database-name', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-        });
-        console.log('Connect succes');
-    } catch (error) {
-        console.log('fail');
-    }
-}
+        })
+        .then(() => console.log('Connected to database'))
+        .catch((error) => console.error('Connection error:', error));
+};
 
 module.exports = { connect };
